@@ -37,7 +37,5 @@ public class SystemDwojkowy {
         System.out.println(theLowest);
         Path outputPath = Paths.get("C:\\Users\\kacpe\\OneDrive\\Pulpit\\inf-pr-dane\\dane\\58\\wynik1.txt");
         Files.write(outputPath,result.getBytes());
-
-
     }
 }
