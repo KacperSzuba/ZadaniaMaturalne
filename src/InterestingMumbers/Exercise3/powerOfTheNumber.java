@@ -13,11 +13,16 @@ public class powerOfTheNumber {
         int tab[] = new int[9];
         Set<Integer> onePowerNumbers = new TreeSet<>();
         for(int i=0;i<listOfNumbers.size();i++){
-            int number =   Helper.powerCalculation(listOfNumbers.get(i));
+            int number = Helper.powerCalculation(listOfNumbers.get(i));
             tab[number]++;
             if(number==1){
-                onePowerNumbers.add(number);
+                onePowerNumbers.add(Integer.parseInt(listOfNumbers.get(i)));
             }
         }
+        for (int i : tab) {
+            System.out.println(i);
+        }
+        System.out.println(((TreeSet<Integer>) onePowerNumbers).first());
+        System.out.println(((TreeSet<Integer>) onePowerNumbers).last());
     }
 }
