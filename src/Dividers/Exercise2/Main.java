@@ -13,7 +13,7 @@ public class Main {
         NumberOfDividers numberOfDividers = new NumberOfDividers();
         for(int i=0;i<list.size();i++){
             if(numberOfDividers.howManyDivisors(list.get(i))==18){
-                System.out.println(list.get(i)+": "+numberOfDividers.set);
+                System.out.println(list.get(i)+": "+numberOfDividers.getSet());
                 numberOfDividers.clearSet();
             }
         }

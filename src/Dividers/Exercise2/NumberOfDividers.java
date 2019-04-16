@@ -13,7 +13,7 @@ public class NumberOfDividers {
     public int howManyDivisors(String number){
         int result = 0;
             for(int i=1;i<=Integer.parseInt(number);i++){
-                if((Integer.parseInt(number))%i==0){
+                if(Integer.parseInt(number)%i==0){
                     set.add(i);
                     result++;
                 }
